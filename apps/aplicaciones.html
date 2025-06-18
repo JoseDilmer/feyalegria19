@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones Educativas | Colegio Fe y Alegria 31</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="stylesapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tipos de letras -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        <!-- Botón de Tema -->
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Logo Colegio Sagrado Corazón de Jesús">
+                    <h1 class="font-effect-fire">Colegio Fe y Alegria 19</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="../index.html#academico">Académico</a></li>
+                        <li><a href="../index.html#admisiones">Admisiones</a></li>
+                        <li><a href="aplicaciones.html" class="active">Aplicaciones</a></li>
+                        <li><a href="../index.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </header>
+    
+        <main class="aplicaciones">
+            <div class="container">
+                <!-- Botón de PDF --------------PDF-->
+            <div class="pdf-export">
+                <button class="pdf-btn" id="exportPdf">
+                    <i class="fas fa-file-pdf"></i> Exportar a PDF
+                </button>
+            </div class="muevete">
+                <h1><i class="fas fa-rocket"></i> Recursos Educativos Digitales</h1>
+                <p class="subtitle">Herramientas validadas por nuestro equipo docente</p>
+                
+                <!-- Barra de Búsqueda -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Ej: Matemáticas, Khan Academy...">
+                    <button id="search-btn"><i class="fas fa-search"></i> Buscar</button>
+                </div>
+                
+                <!-- Filtros por Categoría -->
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="todas">Todas</button>
+                    <button class="filter-btn" data-category="matematica">Matemáticas</button>
+                    <button class="filter-btn" data-category="ciencias">Ciencias</button>
+                    <button class="filter-btn" data-category="idiomas">Idiomas</button>
+                    <button class="filter-btn" data-category="programacion">Programación</button>
+                    <button class="filter-btn" data-category="comunicacion">Comunicación</button>
+                </div>
+                
+                <!-- Contenedor de Aplicaciones -->
+                <div class="apps-grid">
+                    
+                    <!-- Khan Academy -->
+                    <div class="app-card" data-categories="matematica ciencias" data-search="khan academy matemáticas ciencias salman khan ejercicios videos">
+                        <div class="app-header">
+                            <img src="../img/app/Khanacademy.png" alt="Khan Academy">
+                            <h3>Khan Academy</h3>
+                            <p class="app-summary">Plataforma gratuita con ejercicios y videos educativos.</p>
+                            <div class="app-categories">
+                                <span class="category-tag matematica">Matemáticas</span>
+                                <span class="category-tag ciencias">Ciencias</span>
+                            </div>
+                        </div>
+                        
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
+                                <p>Proporcionar educación gratuita de alta calidad para cualquier persona en cualquier lugar.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>Más de 10,000 videos y ejercicios interactivos</li>
+                                    <li>Seguimiento personalizado del progreso</li>
+                                    <li>Contenido alineado con planes de estudio oficiales</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i> Público Objetivo</h4>
+                                <p><strong>6 a 18 años</strong> (Primaria a Bachillerato) y docentes.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p>Salman Khan (2008)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://es.khanacademy.org/" target="_blank" class="app-link">khanacademy.org</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://es.khanacademy.org/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Aplicativo Duolingo -->
+                    <div class="app-card" data-categories="idiomas" data-search="duolingo idiomas inglés francés alemán">
+                        <div class="app-header">
+                            <img src="../img/app/duolingo.png" alt="Duolingo">
+                            <h3>Duolingo</h3>
+                            <p class="app-summary">Aprende idiomas con lecciones gamificadas.</p>
+                            <div class="app-categories">
+                                <span class="category-tag idiomas">Idiomas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
+                                <p>Hacer el aprendizaje de idiomas accesible y divertido mediante juegos.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>30+ idiomas disponibles</li>
+                                    <li>Sistema de recompensas y streaks</li>
+                                    <li>Modo sin conexión</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i> Público Objetivo</h4>
+                                <p><strong>10+ años</strong> (Desde 5° Primaria hasta adultos).</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p>Luis von Ahn (2011)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://www.duolingo.com" target="_blank" class="app-link">duolingo.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://www.duolingo.com" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Aplicacion logicLike -->
+                    <div class="app-card" data-categories="matematica" data-search="matematica razonamiento fraciones desarrollo logiclike">
+                        <div class="app-header">
+                            <img src="../img/app/logiclike.png" alt="LogicLike">
+                            <h3>LogicLike</h3>
+                            <p class="app-summary">Aprende Matematica con este herramienta.</p>
+                            <div class="app-categories">
+                                <span class="category-tag matematica">Matemáticas</span>
+                            </div>
+                        </div>
+                        
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
+                                <p>Aprender matematicas de manera facil y divertido mediante juegos.</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>Desarrollar habilidades Cognitivas</li>
+                                    <li>Mejora el razonamiento Logico</li>
+                                    <li>Mejora la atencion</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i> Público Objetivo</h4>
+                                <p><strong>4+ años</strong> (Desde 5° Primaria hasta adultos).</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p> Mieke VanderBorght (2011)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://logiclike.com/es-mx" target="_blank" class="app-link">LogicLike.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://logiclike.com/es-mx" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Aplicacion ArbolABC -->
+                    <div class="app-card" data-categories="comunicacion" data-search="comunicacion lectura letras libros arbol arbolabc">
+                        <div class="app-header">
+                            <img src="../img/app/ArbolABC.jpg" alt="LogicLike">
+                            <h3>ArbolABC</h3>
+                            <p class="app-summary">Los juegos están diseñados para ser educativos y entretenidos a la vez, 
+                                basados en la teoría de las inteligencias múltiples</p>
+                            <div class="app-categories">
+                                <span class="category-tag comunicacion">Comunicación</span>
+                            </div>
+                        </div>
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i> Objetivo</h4>
+                                <p>Desarrollar habilidades de lógica, pensamiento crítico y resolución de problemas</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>Ofrecer juegos y libros interactivos en diversas áreas del conocimiento</li>
+                                    <li>El aprendizaje a través del juego puede reducir la ansiedad</li>
+                                    <li>Fomentar la autoconfianza y aumentar la motivación</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i> Público Objetivo</h4>
+                                <p><strong>3+ años</strong> (para niños de 3 a 10 años.).</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p>Paola Artmann (---)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://arbolabc.com/" target="_blank" class="app-link">ArbolABC.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://arbolabc.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Aplicacin Smartick -->
+                    <div class="app-card" data-categories="matematica" data-search="matematica logica juegos programacion smartick">
+                        <div class="app-header">
+                            <img src="../img/app/smartick.png" alt="Smartick">
+                            <h3>Smartick</h3>
+                            <p class="app-summary">Es un método de aprendizaje online que utiliza inteligencia artificial</p>
+                            <div class="app-categories">
+                                <span class="category-tag matematica">Matemática</span>
+                            </div>
+                        </div>
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                                <p>Desarrollar habilidades de pensamiento críticoy y motivar a los estudiantes para aprender</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>Smartick se adapta al ritmo y nivel de cada niño</li>
+                                    <li>Analiza el rendimiento del niño y ajusta los ejercicios en consecuencia</li>
+                                    <li>Corrige errores de inmediato y ayuda al niño a comprender mejor los conceptos</li>
+                                    <li>Hábito de estudio perdurable</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                                <p><strong>4+ años</strong> (para niños de 4 a 14 años)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p> Desconocido (---)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://lp.smartick.com/" target="_blank" class="app-link">Smartick.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://lp.smartick.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Aplicacin Matific -->
+                    <div class="app-card" data-categories="matematica" data-search="matematica logica juegos programacion matific">
+                        <div class="app-header">
+                            <img src="../img/app/matific.jpg" alt="Matific">
+                            <h3>Matific</h3>
+                            <p class="app-summary">Es un método de aprendizaje online que utiliza inteligencia artificial</p>
+                            <div class="app-categories">
+                                <span class="category-tag matematica">Matemática</span>
+                            </div>
+                        </div>
+                        <div class="app-details">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                                <p>El objetivo de Matific es cambiar la forma de aprender de un niño</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                                <ul>
+                                    <li>Retroalimentación inmediata</li>
+                                    <li>Los docentes y las familias pueden acceder a informes detallados </li>
+                                    <li>Alineación con el currículo escolar</li>
+                                    <li>Desarrollo de habilidades de resolución de problemas</li>
+                                </ul>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                                <p><strong>4+ años</strong> (para niños de 4 a 12 años)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-user-tie"></i> Creador</h4>
+                                <p> Desconocido (---)</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-link"></i> Enlace</h4>
+                                <a href="https://www.matific.com/" target="_blank" class="app-link">Matific.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="app-footer">
+                            <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                            <a href="https://www.matific.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+            <!-- Aplicacin Kokitos.com -->
+            <div class="app-card" data-categories="matematica programacion" data-search="matematica programacion logica juegos ludicos kokitos">
+                <div class="app-header">
+                    <img src="../img/app/kokitos.png" alt="Kokitos">
+                    <h3>Kokitos.com</h3>
+                    <p class="app-summary">Juegos están pensados para estimular el aprendizaje de forma lúdica y atractiva</p>
+                    <div class="app-categories">
+                        <span class="category-tag matematica">Matemática</span>
+                        <span class="category-tag programacion">Programación</span>
+                    </div>
+                </div>
+                <div class="app-details">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                        <p>Fomentar habilidades como el razonamiento lógico, la memoria y la concentración</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                        <ul>
+                            <li>Juegos están diseñados para estimular la memoria</li>
+                            <li>Incluyen juegos para todas las edades y niveles</li>
+                            <li>Basados en la teoría de las inteligencias múltiples</li>
+                            <li>Juegos de matemáticas para aprender a contar y a sumar</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                        <p><strong>2+ años</strong> (para niños, jovenes y adultos)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                        <p> Rocío González (2011)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-link"></i> Enlace</h4>
+                        <a href="https://www.cokitos.com/" target="_blank" class="app-link">Kokitos.com</a>
+                    </div>
+                </div>
+                
+                <div class="app-footer">
+                    <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                    <a href="https://www.cokitos.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+    
+            <!-- Aplicacin Canva -->
+            <div class="app-card" data-categories="programacion" data-search="creacion digital programacion edicion canva">
+                <div class="app-header">
+                    <img src="../img/app/Canva.png" alt="Canva">
+                    <h3>Canva</h3>
+                    <p class="app-summary">Canva es una plataforma de diseño gráfico en línea cque permite a cualquier persona realizar diseños profesionales </p>
+                    <div class="app-categories">
+                        <span class="category-tag programacion">Programación</span>
+                    </div>
+                </div>
+                <div class="app-details">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                        <p>Permitir a cualquier persona crear diseños profesionales de forma fácil, rápida e intuitiva</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                        <ul>
+                            <li>Facilidad de uso</li>
+                            <li>Gran variedad de plantillas</li>
+                            <li>Acceso desde cualquier lugar</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                        <p><strong>8+ años</strong> (Para estudiantes, docentes y emprendedores)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                        <p> Melanie Perkins, Cliff Obrecht y Cameron Adams (2013)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-link"></i> Enlace</h4>
+                        <a href="https://www.canva.com/" target="_blank" class="app-link">Canva.com</a>
+                    </div>
+                </div>
+                
+                <div class="app-footer">
+                    <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                    <a href="https://www.canva.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- Aplicacion Xmind --------->
+            <div class="app-card" data-categories="comunicacion" data-search="creacion digital comunicacion mapas mentales organizador xmind">
+                <div class="app-header">
+                    <img src="../img/app/Xmind.png" alt="Xmind">
+                    <h3>Xmind</h3>
+                    <p class="app-summary">XMind es un software de mapas mentales diseñado para ayudar a organizar ideas</p>
+                    <div class="app-categories">
+                        <span class="category-tag comunicacion">Comunicación</span>
+                    </div>
+                </div>
+                <div class="app-details">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                        <p>Permitir a organizar ideas, planificar proyectos, tomar decisiones y visualizar información de forma estructurada</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                        <ul>
+                            <li>Fomenta la organización mental</li>
+                            <li>Ideal para lluvia de ideas y planificación</li>
+                            <li>Los mapas pueden exportarse en varios formatos como PDF, Word, PNG, Markdown, entre otros</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                        <p><strong>8+ años</strong> (Para estudiantes, docentes, investigadores y analistas)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                        <p> Empresa XMind Ltd(2007)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-link"></i> Enlace</h4>
+                        <a href="https://xmind.app/" target="_blank" class="app-link">Xmind.com</a>
+                    </div>
+                </div>
+                
+                <div class="app-footer">
+                    <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                    <a href="https://xmind.app/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+
+            <!-- Aplicacion Scratch --------->
+            <div class="app-card" data-categories="programacion" data-search="creacion digital programacion animaciones juegos scratch">
+                <div class="app-header">
+                    <img src="../img/app/scratch.png" alt="Scratch">
+                    <h3>Scratch</h3>
+                    <p class="app-summary">Entorno de programación visual gratuito diseñado para que niños, jóvenes y principiantes 
+                        puedan crear fácilmente sus propias historias interactivas, juegos y animaciones</p>
+                    <div class="app-categories">
+                        <span class="category-tag programacion">Programación</span>
+                    </div>
+                </div>
+                <div class="app-details">
+                    <div class="detail-item">
+                        <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                        <p>Facilitar el aprendizaje de la programación y el pensamiento computacional 
+                            a través de una plataforma intuitiva, divertida y educativa</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                        <ul>
+                            <li>Aprendizaje intuitivo y creativo</li>
+                            <li>Fomenta el pensamiento lógico y la resolución de problemas</li>
+                            <li>Permite compartir proyectos en línea con una comunidad global</li>
+                        </ul>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                        <p><strong>8+ años</strong> (para niños y niñas)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                        <p> MIT Media Lab, liderado por Mitchel Resnick.(2007)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4><i class="fas fa-link"></i> Enlace</h4>
+                        <a href="https://scratch.mit.edu/" target="_blank" class="app-link">Scratch.com</a>
+                    </div>
+                </div>
+                
+                <div class="app-footer">
+                    <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                    <a href="https://scratch.mit.edu/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            
+        <!-- Aplicacion Tinkercad --------->
+        <div class="app-card" data-categories="programacion" data-search="creacion digital programacion modelos 3D electonica tinkercad">
+            <div class="app-header">
+                <img src="../img/app/tinkercad.png" alt="Tinkercad">
+                <h3>Tinkerad</h3>
+                <p class="app-summary">Tinkercad es una herramienta en línea gratuita que permite diseñar modelos 3D, 
+                    circuitos electrónicos y simular programación con bloques de forma sencilla y visual.</p>
+                <div class="app-categories">
+                    <span class="category-tag programacion">Programación</span>
+                </div>
+            </div>
+            <div class="app-details">
+                <div class="detail-item">
+                    <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                    <p>Facilitar el aprendizaje del diseño 3D, electrónica básica y programación a estudiantes, 
+                        educadores y principiantes de todas las edades.</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                    <ul>
+                        <li>Es gratuito y funciona desde el navegador, sin necesidad de instalación</li>
+                        <li>Su interfaz intuitiva permite aprender de forma práctica y divertida</li>
+                        <li>Permite crear desde modelos 3D hasta circuitos electrónicos con Arduino</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                    <p><strong>8+ años</strong> (para estudiantes de primaria, secundaria y universitarios)</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                    <p> MKai Backman y Mikko Mononen.(2011) <br> Autodesk (2013)</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-link"></i> Enlace</h4>
+                    <a href="https://www.tinkercad.com/" target="_blank" class="app-link">Tinkercad.com</a>
+                </div>
+            </div>
+            
+            <div class="app-footer">
+                <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                <a href="https://www.tinkercad.com/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+        <!-- Aplicacion Geogebra --------->
+        <div class="app-card" data-categories="matematica" data-search="matematica ecuaciones graficas lineales ecuaciones geometria geogebra">
+            <div class="app-header">
+                <img src="../img/app/geogebra.png" alt="Geogebra">
+                <h3>Geogebra</h3>
+                <p class="app-summary">GeoGebra es un software interactivo de matemáticas que combina geometría, álgebra, cálculo, estadística
+                    y gráficos en una sola plataforma dinámica, ideal para la enseñanza y el aprendizaje.</p>
+                <div class="app-categories">
+                    <span class="category-tag matematica">Matemática</span>
+                </div>
+            </div>
+            <div class="app-details">
+                <div class="detail-item">
+                    <h4><i class="fas fa-bullseye"></i>Objetivo</h4>
+                    <p>Apoyar la enseñanza y el aprendizaje de las matemáticas mediante herramientas 
+                        visuales y dinámicas que facilitan la comprensión de conceptos abstractos.</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-gift"></i> Beneficios</h4>
+                    <ul>
+                        <li>Multidisciplinar: Integra varias ramas de las matemáticas en un solo entorno</li>
+                        <li>Interactivo: Permite construir y manipular objetos matemáticos en tiempo real</li>
+                        <li>Gratuito y accesible: Está disponible de forma gratuita tanto en línea como sin conexión</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-users"></i>Público Objetivo</h4>
+                    <p><strong>10+ años</strong> (para estudiantes de primaria, secundaria y universitarios)</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-user-tie"></i>Creador</h4>
+                    <p> Markus Hohenwarter (2001)</p>
+                </div>
+                <div class="detail-item">
+                    <h4><i class="fas fa-link"></i> Enlace</h4>
+                    <a href="https://www.geogebra.org/" target="_blank" class="app-link">Geogebra.com</a>
+                </div>
+            </div>
+            
+            <div class="app-footer">
+                <button class="toggle-details"><i class="fas fa-info-circle"></i> Ver detalles</button>
+                <a href="https://www.geogebra.org/" target="_blank" class="btn">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
+
+        <!-- [Más aplicaciones...] -->
+            
+            <!-- Mensaje cuando no hay resultados -->
+            <div class="no-results">
+                <i class="fas fa-search" style="font-size: 2rem; margin-bottom: 15px;"></i>
+                <h3>No encontramos resultados</h3>
+                <p>Prueba con otros términos o categorías</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+        <footer>
+            <!-- Mismo footer que index.html -->
+            <div class="container">
+                <p>&copy; 2025 Colegio Fe y Alegria 19. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+
+    <!-- scripts -->
+    <script src="apps.js"></script>
+    <!-- Biblioteca para generar PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"> </script>
+</body>
+</html>
